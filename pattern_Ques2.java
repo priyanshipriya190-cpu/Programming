@@ -1,0 +1,27 @@
+
+public class Main {
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 4; i++) {
+
+            int start;
+
+            if (i % 2 == 0)
+                start = 0;
+            else
+                start = 1;
+
+            for (int j = 1; j <= i; j++) {
+                System.out.print(start);
+                start = 1 - start; // toggle between 0 and 1
+            }
+
+            System.out.println();
+        }
+    }
+}
+//output
+//1
+//01
+//101
+//0101
